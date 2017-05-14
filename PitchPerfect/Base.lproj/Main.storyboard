@@ -28,13 +28,33 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wab-NP-RCh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfM-z3-Tmc">
+                                <rect key="frame" x="133.5" y="356" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFo-2i-B5O">
+                                <rect key="frame" x="134.5" y="385" width="106" height="30"/>
+                                <state key="normal" title="Stop Recording"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Wk-Lx-sj2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="j47-9t-FLe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="20S-YB-RRJ"/>
+                            <constraint firstItem="WFo-2i-B5O" firstAttribute="top" secondItem="AfM-z3-Tmc" secondAttribute="bottom" constant="8" id="8FA-oQ-UQW"/>
+                            <constraint firstItem="AfM-z3-Tmc" firstAttribute="top" secondItem="j47-9t-FLe" secondAttribute="bottom" constant="8" id="gKJ-gZ-tM5"/>
+                            <constraint firstItem="AfM-z3-Tmc" firstAttribute="centerX" secondItem="j47-9t-FLe" secondAttribute="centerX" id="i1z-20-Ful"/>
+                            <constraint firstItem="WFo-2i-B5O" firstAttribute="centerX" secondItem="AfM-z3-Tmc" secondAttribute="centerX" id="l7o-JD-WbT"/>
                             <constraint firstItem="j47-9t-FLe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zRg-A8-9wW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recordingLabel" destination="AfM-z3-Tmc" id="cIu-Tt-Lvp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
