@@ -170,7 +170,8 @@
                         <outlet property="chipmunkButton" destination="ITJ-rE-j4y" id="3lu-cS-t4v"/>
                         <outlet property="echoButton" destination="RPc-yn-8nB" id="t3u-Pk-8xd"/>
                         <outlet property="rabbitButton" destination="Se9-b7-cbZ" id="hHb-ih-2Sl"/>
-                        <outlet property="snailButton" destination="hNX-Lm-77j" id="fOP-aV-VYe"/>
+                        <outlet property="reverbButton" destination="hNX-Lm-77j" id="OlE-RW-0j8"/>
+                        <outlet property="snailButton" destination="VCC-y1-XFc" id="yeS-91-u0X"/>
                         <outlet property="stopButton" destination="F1l-sY-Orb" id="OQu-gT-gNB"/>
                         <outlet property="vaderButton" destination="q0u-6z-iAu" id="vJb-XM-KBS"/>
                     </connections>
