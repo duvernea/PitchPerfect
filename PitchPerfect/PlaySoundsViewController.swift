@@ -31,7 +31,6 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playSoundForButton(_ sender: UIButton) {
-        print ("play sound button pressed")
         switch(ButtonType(rawValue: sender.tag)!) {
         case .slow:
             playSound(rate: 0.5)
@@ -51,16 +50,12 @@ class PlaySoundsViewController: UIViewController {
     }
 
     @IBAction func stopButtonPressed(_ sender: AnyObject) {
-        print("stop audio button pressed")
         stopAudio()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("PlaySoundsViewController viewdidLoad()")
-        print(recordedAudioURL)
         setupAudio()
-        // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
